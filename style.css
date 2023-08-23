@@ -62,14 +62,59 @@ h1{
     display: none;
 }
 
-.password-box, .email-box, .form-footer, .phone-box, .born-box, .name-box{
+.password-box, .email-box, .form-footer, .phone-box, .name-box{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
 }
 
+.born-box{
+    margin-top: 20px;
+}
+.born-box select{
+    margin: 5px;
+    border-radius: 5px;
+    border: solid 1px rgba(0, 0, 0);    
+}
+.born-box select:focus{
+    outline: none;
+}
+.born-box span, .radio-box span{
+    font-size: 18px;
+}
+#day{
+    width: 40px;
+}
+#year{    
+    width: 60px;
+}
+#month{
+    width: 45px;
+}
+
 .radio-box{
     display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.radio-type-box{
+    display: flex;
+}
+.radio-type-box input{
+    height: 20px;
+    width: 100px;
+    margin-top: 25px;
+    margin-left: -40px;    
+    margin-right: -5px;
+}
+.radio-type-box label{
+    transform: translateY(50%);    
+}
+.born-box{
+    display: flex;
+}
+.born-box select{
+    width: 40px;
 }
 
 
@@ -101,10 +146,12 @@ input[type=submit]{
 
 .email-box span, .password-box span{
     color: white;
-    display: none;
-    background: red;
+    width: 150px;
+    padding: 10px;
+    background: rgb(255, 20, 20);
     border-radius: 5px;    
-    transform: translate(60%, -10%);    
+    transform: translate(300%, -100%);    
+    position: absolute;
 }
 
 #passwordForget{
@@ -121,6 +168,10 @@ a{
 .form-footer{
     display: flex;
     flex-direction: column;
+}
+
+.form-register .form-footer{
+    margin-top: 50px;
 }
 
 #btnSubmitLogin, #btnSubmitRegister{
