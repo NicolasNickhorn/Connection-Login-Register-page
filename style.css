@@ -58,7 +58,8 @@ h1{
 .alert{
     color: red;
     font-size: 23px;
-    transform: translate(250%, 40%);
+    transform: translate(1600%, 40%);
+    position: absolute;
     display: none;
 }
 
@@ -79,7 +80,7 @@ h1{
 .born-box select:focus{
     outline: none;
 }
-.born-box span, .radio-box span{
+.born-box span, .gender-box span{
     font-size: 18px;
 }
 #day{
@@ -92,22 +93,22 @@ h1{
     width: 45px;
 }
 
-.radio-box{
+.gender-box{
     display: flex;
     flex-direction: column;
     margin-top: 20px;
 }
-.radio-type-box{
+.gender-type-box{
     display: flex;
 }
-.radio-type-box input{
+.gender-type-box input{
     height: 20px;
     width: 100px;
     margin-top: 25px;
     margin-left: -40px;    
     margin-right: -5px;
 }
-.radio-type-box label{
+.gender-type-box label{
     transform: translateY(50%);    
 }
 .born-box{
@@ -144,15 +145,118 @@ input[type=submit]{
     opacity: 0.4;
 }
 
-.email-box span, .password-box span{
+.form-login .email-box span{
     color: white;
     width: 150px;
     padding: 10px;
     background: rgb(255, 20, 20);
     border-radius: 5px;    
-    transform: translate(300%, -100%);    
     position: absolute;
+    transform: translate(270%, -30%);
+    display: none;
 }
+.form-login .password-box span{
+    color: white;
+    width: 150px;
+    padding: 10px;
+    background: rgb(255, 20, 20);
+    border-radius: 5px;    
+    position: absolute;
+    transform: translate(270%, -50%);
+    display: none;
+}
+
+.form-register .name-box #spanName{
+    color: white;
+    width: 150px;
+    padding: 10px;
+    background: rgb(255, 20, 20);
+    border-radius: 5px;    
+    position: absolute;
+    transform: translate(270%, -0%);    
+    display: none;
+}
+.form-register .name-box #spanLastName{
+    color: white;
+    width: 150px;
+    padding: 10px;
+    background: rgb(255, 20, 20);
+    border-radius: 5px;    
+    position: absolute;
+    transform: translate(270%, 50%);    
+    display: none;
+}
+.form-register .email-box span{
+    color: white;
+    width: 150px;
+    padding: 10px;
+    background: rgb(255, 20, 20);
+    border-radius: 5px;    
+    position: absolute;
+    transform: translate(270%, -30%);
+    display: none;
+}
+.form-register .phone-box span{
+    color: white;
+    width: 150px;
+    padding: 10px;
+    background: rgb(255, 20, 20);
+    border-radius: 5px;    
+    position: absolute;
+    transform: translate(270%, -30%);
+    display: none;
+}
+.form-register .password-box #spanPasswordRegister{
+    color: white;
+    width: 150px;
+    padding: 10px;
+    background: rgb(255, 20, 20);
+    border-radius: 5px;    
+    position: absolute;
+    transform: translate(270%, -50%);    
+    display: none;
+}
+.form-register .password-box #spanConfirmPassword{
+    color: white;
+    width: 150px;
+    padding: 10px;
+    background: rgb(255, 20, 20);
+    border-radius: 5px;    
+    position: absolute;
+    transform: translate(270%, 50%);    
+    display: none;
+}
+.form-register .born-box #spanBorn{
+    color: white;
+    width: 150px;
+    padding: 10px;
+    background: rgb(255, 20, 20);
+    border-radius: 5px;    
+    position: absolute;
+    transform: translate(270%, -30%);    
+    display: none;
+}
+.form-register .gender-box #spanGender{
+    color: white;
+    width: 150px;
+    padding: 10px;
+    background: rgb(255, 20, 20);
+    border-radius: 5px;    
+    position: absolute;
+    transform: translate(270%, -30%);
+    display: none;
+}
+
+
+/*.email-box span, .password-box span{
+    color: white;
+    width: 150px;
+    padding: 10px;
+    background: rgb(255, 20, 20);
+    border-radius: 5px;    
+    transform: translate(300%, -100%);
+    position: absolute;
+}*/
 
 #passwordForget{
     transform: translateX(-15%);
