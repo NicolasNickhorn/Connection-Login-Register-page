@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,9 +25,9 @@
                         </div>
 
                         <div class="password-box">
-                            <input type="password" id="passLogin" placeholder="Senha">
+                            <input type="password" id="passwordLogin" placeholder="Senha">
                             <ion-icon name="alert-circle-outline" class="alert"></ion-icon>
-                            <span id="spanPasswordLogin">A senha deve conter no mínimo três caracteres</span>                            
+                            <span id="spanPasswordLogin">A senha deve conter no mínimo quatro caracteres</span>                            
                         </div>                            
 
                         <a href="#" id="passwordForget">Esqueceu a senha?</a>
@@ -49,22 +49,30 @@
                     <div class="inputs-data-user">
                         <div class="name-box">
                             <input type="text" id="name" placeholder="Nome">
-                            <input type="text" id="lasName" placeholder="Sobre Nome">
+                            <ion-icon name="alert-circle-outline" class="alert"></ion-icon>
+                            <span id="spanName">Informe seu nome</span>
+                            <input type="text" id="lastName" placeholder="Sobre Nome">
+                            <ion-icon name="alert-circle-outline" class="alert"></ion-icon>
+                            <span id="spanLastName">Informe seu sobre-nome</span>
                         </div>
                         
                         <div class="email-box">
                             <input type="email" id="emailRegister" placeholder="Email">
-                            <span id="spanEmailRegister">Informe um email válido</span>                            
+                            <ion-icon name="alert-circle-outline" class="alert"></ion-icon>
+                            <span id="spanEmailRegister">Informe um email válido</span>
                         </div>
 
                         <div class="phone-box">
                             <input type="text" id="phone" placeholder="Telefone">
+                            <ion-icon name="alert-circle-outline" class="alert"></ion-icon>
+                            <span id="spanPhone">Informe um número de telefone</span>
                         </div>                        
 
                         <div class="password-box">
-                            <input type="password" id="passRegister" placeholder="Senha">
+                            <input type="password" id="passwordRegister" placeholder="Senha">
+                            <ion-icon name="alert-circle-outline" class="alert"></ion-icon>
                             <span id="spanPasswordRegister">A senha deve conter no mínimo três caracteres</span>
-                            <input type="password" id="passRegisterConfirm" placeholder="Confirme a Senha">
+                            <input type="password" id="passwordRegisterConfirm" placeholder="Confirme a Senha">
                             <span id="spanConfirmPassword">As senhas devem ser compatíveis</span>                            
                         </div>
 
@@ -154,14 +162,16 @@
                                 <option value="2021">2021</option>
                                 <option value="2022">2022</option>
                             </select>
+                            <span id="spanBorn">Informe sua data de nascimento</span>
                         </div>
 
-                        <div class="radio-box">                            
-                            <div class="radio-type-box">
+                        <div class="gender-box">
+                            <div class="gender-type-box">
                                 <span>Sexo:</span>
                                 <input type="radio" id="M"><label for="M">Masculino</label>
                                 <input type="radio" id="F"><label for="F">Feminino</label>
                                 <input type="radio" id="O"><label for="O">Outro</label>
+                                <span id="spanGender">Informe seu gênero</span>
                             </div>                           
                         </div>
 
